@@ -6,13 +6,18 @@ public class ShoppingMemo {
     private String product;
     private int quantity;
     private long id;
+    private boolean checked;
 
-    public ShoppingMemo(String product, int quantity, long id) {
+    public ShoppingMemo(String product, int quantity, long id, boolean checked) {
         this.product = product;
         this.quantity = quantity;
         this.id = id;
+        this.checked = checked;
     }
 
+    public boolean isChecked() {
+        return checked;
+    }
     public String getProduct() {
         return product;
     }
